@@ -1,46 +1,68 @@
-header {
-    background-color: #111827;
+.header {
+    display: flex;
+    background-color: #10479b;
     color: white;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    min-width: 150px;
+}
+
+.header-logo h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.header-logo p {
+    font-size: 14px;
+    margin: 5px 0 0;
+}
+
+.header-content {
+    flex: 1;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    background-color: #1862b5;
+    padding: 15px 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-header p {
-    margin: 0;
-    color: #9ca3af;
-    font-size: 14px;
-}
-
-header span {
-    margin: 0 10px;
-    font-size: 14px;
-}
-
-header nav {
+.nav-left,
+.nav-right {
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
-header button {
+.header-nav button {
     background-color: transparent;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 6px;
 }
 
-header button:last-child {
-    background-color: #2563eb;
+.header-nav .register-button {
+    background-color: #10479b;
 }
 
-header button:hover {
-    background-color: #374151;
+.header-nav button:hover {
+    background-color: #0d3b80;
 }

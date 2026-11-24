@@ -1,49 +1,73 @@
 .hero {
-    background-color: #111827;
+    background-color: #10141b;
     background-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.85),
-        rgba(0, 0, 0, 0.2)
+        #10141b 0%,
+        #10141b 25%,
+        rgba(16, 20, 27, 0.85) 35%,
+        rgba(16, 20, 27, 0.2) 65%,
+        rgba(16, 20, 27, 0.1) 100%
     ), url("../../assets/hero-car.jpg");
 
-    background-size: cover;
-    background-position: center;
+    background-size: cover, contain;
+    background-position: center, right center;
     background-repeat: no-repeat;
 
     color: white;
-    padding: 100px 60px;
-    min-height: 450px;
+    padding: 80px;
+    min-height: 55vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero h2 {
-    font-size: 48px;
+    font-size: 64px;
     margin: 0 0 20px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 22px;
     color: #d1d5db;
-    max-width: 500px;
+    max-width: 550px;
     line-height: 1.6;
 }
 
 .hero div {
     display: flex;
     gap: 15px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .hero button {
-    background-color: #2563eb;
+    background-color: #1862b5;
     color: white;
-    padding: 14px 24px;
+    padding: 16px 30px;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .hero button:last-child {
     background-color: transparent;
     border: 1px solid white;
+}
+
+@media (max-width: 1400px) {
+    .hero {
+        background-size: cover, cover;
+        background-position: center, right center;
+        min-height: 450px;
+        padding: 60px;
+    }
+
+    .hero h2 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
 }

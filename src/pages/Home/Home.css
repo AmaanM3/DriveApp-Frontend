@@ -1,34 +1,46 @@
 .home {
-    background-color: #111827;
+    background-color: #171c22;
     color: white;
-    min-height: 100vh;
 }
 
 .benefits {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 30px 60px;
-    background-color: #1f2937;
+    padding: 25px 50px;
+    background-color: #1f2730;
 }
 
-.benefits h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
 
-.benefits p {
-    color: #9ca3af;
-    font-size: 14px;
+.benefit-icon {
+    font-size: 32px;
+}
+
+.benefit h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 6px;
+}
+
+.benefit p {
+    color: #aab8c8;
+    font-size: 15px;
+    margin: 0;
 }
 
 .features {
-    padding: 40px 60px;
+    padding: 50px 40px;
 }
 
 .features h2 {
-    font-size: 28px;
-    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 15px;
 }
 
 .feature-grid {

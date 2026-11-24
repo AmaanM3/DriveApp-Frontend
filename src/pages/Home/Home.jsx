@@ -8,19 +8,28 @@ function Home() {
             <Hero />
 
             <section className="benefits">
-                <div>
-                    <h3>Fleksibel booking</h3>
-                    <p>Vælg en tid, der passer dig</p>
+                <div className="benefit">
+                    <span className="benefit-icon">📅</span>
+                    <div>
+                        <h3>Fleksibel booking</h3>
+                        <p>Vælg en tid, der passer dig</p>
+                    </div>
                 </div>
 
-                <div>
-                    <h3>Erfarne kørelærere</h3>
-                    <p>Lær i dit eget tempo</p>
+                <div className="benefit">
+                    <span className="benefit-icon">🛡️</span>
+                    <div>
+                        <h3>Erfarne kørelærere</h3>
+                        <p>Lær i dit eget tempo</p>
+                    </div>
                 </div>
 
-                <div>
-                    <h3>AI-køreassistent</h3>
-                    <p>Få hjælp til teori og trafikregler</p>
+                <div className="benefit">
+                    <span className="benefit-icon">💬</span>
+                    <div>
+                        <h3>AI-køreassistent</h3>
+                        <p>Få hjælp til teori og trafikregler</p>
+                    </div>
                 </div>
             </section>
 
@@ -28,9 +37,20 @@ function Home() {
                 <h2>Kom godt i gang</h2>
 
                 <div className="feature-grid">
-                    <FeatureCard />
-                    <FeatureCard />
-                    <FeatureCard />
+                    <FeatureCard
+                        title="Book en køretime"
+                        description="Find din næste ledige tid"
+                    />
+
+                    <FeatureCard
+                        title="Se dine bookinger"
+                        description="Få overblik over dit køreforløb"
+                    />
+
+                    <FeatureCard
+                        title="Spørg AI-assistenten"
+                        description="Bliv klogere på trafik og teori"
+                    />
                 </div>
             </section>
         </main>
