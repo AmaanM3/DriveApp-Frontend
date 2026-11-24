@@ -1,12 +1,13 @@
-import "./App.css";
+import Header from "./components/Header/Header";
+import Home from "./pages/Home/Home";
 
 function App() {
-  return (
-    <div>
-      <h1>DriveApp</h1>
-      <p>Velkommen til DriveApp Køreskole</p>
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+            <Home />
+        </div>
+    );
 }
 
 export default App;
