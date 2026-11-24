@@ -1,0 +1,46 @@
+header {
+    background-color: #111827;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 0;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+header span {
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+header button:last-child {
+    background-color: #2563eb;
+}
+
+header button:hover {
+    background-color: #374151;
+}
