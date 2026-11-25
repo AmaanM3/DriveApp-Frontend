@@ -17,13 +17,22 @@ function Header() {
 
                 <nav className="header-nav">
                     <div className="nav-left">
-                        <button>Forside</button>
+                        <button onClick={() => (window.location.hash = "home")}>
+                            Forside
+                        </button>
+
                         <button>Køretimer</button>
                     </div>
 
                     <div className="nav-right">
-                        <button>Log ind</button>
-                        <button className="register-button">
+                        <button onClick={() => (window.location.hash = "login")}>
+                            Log ind
+                        </button>
+
+                        <button
+                            className="register-button"
+                            onClick={() => (window.location.hash = "register")}
+                        >
                             Opret bruger
                         </button>
                     </div>

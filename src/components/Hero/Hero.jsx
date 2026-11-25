@@ -16,7 +16,10 @@ function Hero() {
 
             <div>
                 <button>Book køretime</button>
-                <button>Opret bruger</button>
+
+                <button onClick={() => (window.location.hash = "register")}>
+                    Opret bruger
+                </button>
             </div>
         </section>
     );

@@ -1,0 +1,179 @@
+.login-page {
+    display: grid;
+    place-items: start center;
+    min-height: calc(100vh - 114px);
+    padding: 20px 16px 40px;
+    background:
+        linear-gradient(rgba(16, 20, 27, 0.50), rgba(16, 20, 27, 0.60)),
+        url("../../assets/hero-car.jpg") center / cover no-repeat;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 24px clamp(20px, 5vw, 72px) 44px;
+    border: 1px solid #46505e;
+    border-radius: 4px;
+    background-color: #191f28;
+    color: white;
+}
+
+.login-heading {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.login-logo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 170px;
+    padding: 10px 16px;
+    background-color: #10479b;
+}
+
+.login-logo strong {
+    font-size: 30px;
+}
+
+.login-logo span {
+    margin-top: 2px;
+    font-size: 13px;
+}
+
+.login-heading h2 {
+    margin: 20px 0 6px;
+    font-size: 28px;
+}
+
+.login-heading p {
+    margin: 0;
+    color: #b4becb;
+    font-size: 15px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-role {
+    min-width: 0;
+    margin: 0 0 18px;
+    padding: 0;
+    border: 0;
+}
+
+.login-role legend,
+.login-form > label {
+    margin-bottom: 6px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-role-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #526071;
+}
+
+.login-role-options label {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 40px;
+    background-color: #252d38;
+    cursor: pointer;
+}
+
+.login-role-options label.active {
+    background-color: #1862b5;
+}
+
+.login-role-options input {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.login-role-options label:focus-within {
+    z-index: 1;
+    outline: 2px solid #60a5fa;
+    outline-offset: 2px;
+}
+
+.login-form > input {
+    width: 100%;
+    min-height: 42px;
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    border: 1px solid #526071;
+    border-radius: 3px;
+    background-color: #252d38;
+    color: white;
+    font: inherit;
+}
+
+.login-form > input::placeholder {
+    color: #aab3c0;
+    font-size: 14px;
+}
+
+.login-submit,
+.login-footer a {
+    display: grid;
+    place-items: center;
+    min-height: 42px;
+    padding: 10px 16px;
+    border-radius: 3px;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+.login-submit {
+    margin-top: 4px;
+    border: none;
+    background-color: #1862b5;
+}
+
+.login-submit:hover {
+    background-color: #10479b;
+}
+
+.login-message {
+    margin: 12px 0 0;
+    color: #d1d5db;
+    font-size: 14px;
+}
+
+.login-footer {
+    display: grid;
+    gap: 10px;
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid #46505e;
+    text-align: center;
+}
+
+.login-footer a {
+    border: 1px solid #526071;
+    background-color: #1d2733;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    background-color: #2b3848;
+}
+
+.login-form > input:focus-visible,
+.login-submit:focus-visible,
+.login-footer a:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: 2px;
+}
